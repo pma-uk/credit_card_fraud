@@ -1,0 +1,31 @@
+﻿Feature,Value,Description
+income (numeric),"Ranges between [0.1, 0.9].",Annual income of the applicant (in decile form).
+name_email_similarity (numeric),"Ranges between [0, 1].",Metric of similarity between email and applicant’s name. Higher values represent higher similarity.
+prev_address_months_count (numeric),"Ranges between [−1, 380] months (-1 is a missing value).","Number of months in previous registered address of the applicant, i.e. the applicant’s previous residence, if applicable."
+current_address_months_count (numeric),"Ranges between [−1, 429] months (-1 is a missing value).",Months in currently registered address of the applicant.
+customer_age (numeric),"Ranges between [10, 90] years.","Applicant’s age in years, rounded to the decade."
+days_since_request (numeric),"Ranges between [0, 79] days.",Number of days passed since application was done.
+intended_balcon_amount (numeric),"Ranges between [−16, 114].",Initial transferred amount for application.
+payment_type (categorical),5 possible (annonymized) values.,Credit payment plan type.
+zip_count_4w (numeric),"Ranges between [1, 6830].",Number of applications within same zip code in last 4 weeks.
+velocity_6h (numeric),"Ranges between [−175, 16818].","Velocity of total applications made in last 6 hours i.e., average number of applications per hour in the last 6 hours."
+velocity_24h (numeric),"Ranges between [1297, 9586]","Velocity of total applications made in last 24 hours i.e., average number of applications per hour in the last 24 hours."
+ velocity_4w (numeric),"Ranges between [2825, 7020].","Velocity of total applications made in last 4 weeks, i.e., average number of applications per hour in the last 4 weeks."
+bank_branch_count_8w (numeric),"Ranges between [0, 2404].",Number of total applications in the selected bank branch in last 8 weeks.
+date_of_birth_distinct_emails (numeric),"Ranges between [0, 39].",Number of emails for applicants with same date of birth in last 4 weeks.
+employment_status (categorical),7 possible (annonymized) values.,Employment status of the applicant.
+credit_risk_score (numeric),"Ranges between [−191, 389].",Internal score of application risk.
+email_is_free (binary),Either 0 (paid) or 1 (free).,Domain of application email (either free or paid).
+housing_status (categorical),7 possible (annonymized) values.,Current residential status for applicant.
+phone_home_valid (binary),Either 0 (invalid) or 1 (valid).,Validity of provided home phone.
+phone_mobile_valid (binary),Either 0 (invalid) or 1 (valid).,Validity of provided mobile phone.
+bank_months_count (numeric),"Ranges between [−1, 32] months (-1 is a missing value).",How old is previous account (if held) in months.
+has_other_cards (binary),Either 0 (no other cards) or 1 (other cards).,If applicant has other cards from the same banking company.
+proposed_credit_limit (numeric),"Ranges between [200, 2000].",Applicant’s proposed credit limit.
+foreign_request (binary),Either 0 (local) or 1 (foreign).,If origin country of request is different from bank’s country.
+source (categorical),Either browser (INTERNET) or app (TELEAPP).,Online source of application.
+session_length_in_minutes (numeric),"Ranges between [−1, 107] minutes.",Length of user session in banking website in minutes.
+device_os (categorical),"Possible values are Windows, macOS, Linux, X11, or other.",Operative system of device that made request.
+keep_alive_session (binary),Either 0 (no keep alive) 1 (keep alive).,User option on session logout.
+device_distinct_emails (numeric),"Ranges between [−1, 2].",Number of distinct emails in banking website from the used device in last 8 weeks.
+device_fraud_count (numeric),"Ranges between [0, 1].",Number of fraudulent applications with used device.
